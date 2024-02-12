@@ -14,7 +14,15 @@
       border-radius: 3px;
       cursor: pointer;
       margin-right: 8px;
+      transition: opacity 0.15s;
     }
+    .subscribe-button:hover {
+      opacity: 0.7;
+    }
+    .subscribe-button:active {
+      opacity: 0.3;
+    }
+
     .join-button{
       background-color: white;
       border-color: blue;
@@ -25,6 +33,14 @@
       border-style: solid;
       border-width: 1px;
       cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .join-button:hover {
+      color: white;
+      background-color: blue;
+    }
+    .join-button:active{
+      opacity: 0.7;
     }
     .tweet-button{
       background-color: rgb(22, 173, 243);
@@ -37,6 +53,10 @@
       font-size: 15px;
       cursor: pointer;
       margin-left: 8px;
+      transition: box-shadow 0.2s;
+    }
+    .tweet-button:hover{
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
@@ -63,6 +83,19 @@
   </p>
   <p>
     In CSS space (around an element) = MARGIN
+    .subscribe-button:hover <-- styles from over there will be added to regular styles.
+    .subscribe-button:active <-- when clicked.
+    opacity: 0-1;
+  </p>
+  <p>
+    transition property takes TWO values. 1-what to transition, 2-how long
+    as an example "transition: opacity 1s;" to add several elements to transition just use a COMMA (,)
+    ALWAYS put "transition" to base-button CSS style not to HOVER or active.
+  </p>
+  <p>
+    box-shadow property takes 4 values(no commas between them). 
+    1-toRight, 2-doDown, 3-transparency, 4-color(rgba).
+    
   </p>
   
 </body>
