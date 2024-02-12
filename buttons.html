@@ -4,61 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .subscribe-button {
-      background-color: rgb(224, 0, 0);
-      color: white;
-      border: none;
-      height: 35px;
-      width: 130px;
-      border-radius: 3px;
-      cursor: pointer;
-      margin-right: 8px;
-      transition: opacity 0.15s;
-    }
-    .subscribe-button:hover {
-      opacity: 0.7;
-    }
-    .subscribe-button:active {
-      opacity: 0.3;
-    }
-
-    .join-button{
-      background-color: white;
-      border-color: blue;
-      width: 60px;
-      height: 35px;
-      border-radius: 3px;
-      color: blue;
-      border-style: solid;
-      border-width: 1px;
-      cursor: pointer;
-      transition: background-color 0.15s, color 0.15s;
-    }
-    .join-button:hover {
-      color: white;
-      background-color: blue;
-    }
-    .join-button:active{
-      opacity: 0.7;
-    }
-    .tweet-button{
-      background-color: rgb(22, 173, 243);
-      border: none;
-      height: 35px;
-      color: white;
-      width: 70px;
-      border-radius: 35px;
-      font-weight: bold;
-      font-size: 15px;
-      cursor: pointer;
-      margin-left: 8px;
-      transition: box-shadow 0.2s;
-    }
-    .tweet-button:hover{
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
-    }
-  </style>
+  <link rel="stylesheet" href="styles/buttons.css">
 </head>
 <body>
   <button class="subscribe-button">
@@ -76,7 +22,7 @@
   <p>style --> some name is a CSS selector. 
     Which element we are targeting.
     Attribute "class" - allows us to label HTML elements. Means that
-    we set a lablel to a particular element.
+    we set a label to a particular element.
     TO TARGET a class in CSS we have to start our style from DOT (.)
     ex. ".subscribe-button". Without a DOT we target an element name NOT
     a class name. Different elements may have the same class name.
@@ -97,7 +43,15 @@
     1-toRight, 2-doDown, 3-transparency, 4-color(rgba).
   </p>
   <p>
-    CSS Box MODEL to add spaces 
+    CSS Box MODEL to add spaces.
+  </p>
+  <p>
+    We moved our css code to a new file. Thus we have to use <strong>Link</strong>
+    element. This element DOES NOT have closing tag. AKA void element.
+    Takes 2 attributes 1-rel="  ", 2-href="  ". href, in this case, looks css file in THE SAME FOLDER
+    as our main code resides. If we move CSS to a new folder (our from local visibility) we have to specify the path manually
+    rel="" and href="" may be used to add fonts to our page. Be default there are few fonts available. 
+    We may search for a font and add link to it. (Google fonts)
   </p>
   
 </body>
