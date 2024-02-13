@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-youTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
   
     <style>
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
       .picture1 {
         width: 300px;
         display: block;
@@ -15,46 +23,81 @@
         margin-left: 10px;
         display: block;
       }
-      .video-title {
-        width: 300px;
-      }
+      
       .video-preview {
         width: 300px;
         display: inline-block;
         vertical-align: top;
         margin-right: 13px;
       }
+      .video-title {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 13px;
+      }
+      .channel-picture {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+      .video-info {
+        display: inline-block;
+        width: 200px;
+        vertical-align: top;
+      }
+      .video-author {
+        font-weight: 600;
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 4px;
+      }
+      .profile-picture {
+        width: 40px;
+        border-radius: 25px;
+      }
+      .video-stats {
+        color: rgb(96, 96, 96);
+        font-size: 14px;
+      }
+      .thumbnail {
+        margin-bottom: 7px;
+      }
       
-
-
+      
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="what to find?">
     
     <div class="video-preview">
-      <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
-      <p class="video-title">There are 3 types of elements. 1-block element (takes whole line)
-        2-Inline-block element takes as much as it needs
-        3-Inline element (text within text)
-        DIV is a block element, takes whole line. (From division) May be changed to inline-block
-      </p>
-      <p class="video-author">SuperSimpleDev</p>
-      <p class="video-stats">381K &#183; subscribers</p>
+      <div class="thumbnail">
+        <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
+      </div>
+      <div>
+        <div class="channel-picture"><img class="profile-picture" src="pictures/channel-1.jpeg" alt="channel dude 1"></div>
+        <div class="video-info"><p class="video-title">There are 3 types of elements. <strong>1-block element</strong> (takes whole line)
+          <strong>2-Inline-block</strong> element takes as much as it needs
+          <strong>3-Inline element</strong> (text within text)
+          DIV is a block element, takes whole line. (From division) May be changed to inline-block. 
+          DIVs take 100% of space. If we have specification for a width on more specific level, they will take precedence.
+          Images by default overflow to keep its shape. we have to resize it manually.   
+        </p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">381K &#183; subscribers</p></div>
+      </div>
     </div>
 
     <div class="video-preview">
-      <img class="picture1" src="pictures/thumbnail-2.webp" alt="dude is laughing">
-      <p class="video-title">Description for another image appears there</p>
-      <p class="video-author">SillyBilly</p>
-      <p class="video-stats">30K &#183; subscribers</p>
+      <div class="thumbnail">
+        <img class="picture1" src="pictures/thumbnail-2.webp" alt="2 dudes">
+      </div>
+      <div>
+        <div class="channel-picture"><img class="profile-picture" src="pictures/channel-2.jpeg" alt="channel dude 1"></div>
+        <div class="video-info"><p class="video-title">Some text for channel two.
+        </p>
+        <p class="video-author">Silly Billy</p>
+        <p class="video-stats">31K &#183; subscribers</p></div>
+      </div>
     </div>
-
-
-
-
-
-
-
   </body>
 </html>
