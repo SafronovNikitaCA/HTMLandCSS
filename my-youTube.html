@@ -13,9 +13,16 @@
       .search-bar {
         font-size: 14px;
         margin-left: 10px;
+        display: block;
       }
       .video-title {
         width: 300px;
+      }
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 13px;
       }
       
 
@@ -24,14 +31,24 @@
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="what to find?">
-    <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
-    <p class="video-title">There are 3 types of elements. 1-block element (takes whole line)
-    2-Inline-block element takes as much as it needs
-    3-Inline element (text within text)
-    </p>
-    <p class="video-author">SuperSimpleDev</p>
-    <p class="video-stats">381K &#183; subscribers</p>
+    
+    <div class="video-preview">
+      <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
+      <p class="video-title">There are 3 types of elements. 1-block element (takes whole line)
+        2-Inline-block element takes as much as it needs
+        3-Inline element (text within text)
+        DIV is a block element, takes whole line. (From division) May be changed to inline-block
+      </p>
+      <p class="video-author">SuperSimpleDev</p>
+      <p class="video-stats">381K &#183; subscribers</p>
+    </div>
 
+    <div class="video-preview">
+      <img class="picture1" src="pictures/thumbnail-2.webp" alt="dude is laughing">
+      <p class="video-title">Description for another image appears there</p>
+      <p class="video-author">SillyBilly</p>
+      <p class="video-stats">30K &#183; subscribers</p>
+    </div>
 
 
 
