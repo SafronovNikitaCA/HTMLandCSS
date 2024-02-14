@@ -7,66 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-  
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      .search-bar {
-        font-size: 14px;
-        margin-left: 10px;
-        display: block;
-      }
-      .picture1 {
-        width: 100%;
-      }
-      .block-under-picture {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-      .video-title {
-        font-size: 13px;
-        line-height: 15px;
-        margin-bottom: 13px;
-      }
-      .channel-picture {
-        background-color: rgba(0, 0, 255, 0.452);
-      }
-      .video-info {
-        background-color: rgba(128, 128, 128, 0.397);
-      }
-      .video-author {
-        font-weight: 600;
-        font-size: 14px;
-        color: rgb(96, 96, 96);
-        margin-bottom: 4px;
-      }
-      .profile-picture {
-        width: 40px;
-        border-radius: 20px;
-      }
-      .video-stats {
-        color: rgb(96, 96, 96);
-        font-size: 14px;
-      }
-      .thumbnail {
-        margin-bottom: 7px;
-      }
-      .main-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 20px;
-      }
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+     <link rel="stylesheet" href="styles/video.css">
       
 
       
-    </style>
+    
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="what to find?">
+    <div class="header">
+      <div class="left-section">left section</div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="what to find?">
+      </div>
+      <div class="right-section">right section</div>
+      
+    </div>
+    
+
     <div class="main-grid">
       <div class="video-preview">
         <div class="thumbnail">
@@ -88,7 +47,8 @@
         </div>
         <div class="block-under-picture">
           <div class="channel-picture"><img class="profile-picture" src="pictures/channel-2.jpeg" alt="channel dude 1"></div>
-          <div class="video-info"><p class="video-title">Some text for channel two.
+          <div class="video-info"><p class="video-title">Flexbox is better to use when the layout changes on web page. We logged out --> no icon.
+            In grid a layout is more rigid. Order matters. 
           </p>
           <p class="video-author">Silly Billy</p>
           <p class="video-stats">31K &#183; subscribers</p></div>
