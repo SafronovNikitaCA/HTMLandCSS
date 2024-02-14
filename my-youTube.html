@@ -14,21 +14,17 @@
         margin-top: 0px;
         margin-bottom: 0px;
       }
-      .picture1 {
-        width: 300px;
-        display: block;
-      }
       .search-bar {
         font-size: 14px;
         margin-left: 10px;
         display: block;
       }
-      
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 13px;
+      .picture1 {
+        width: 100%;
+      }
+      .block-under-picture {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
       .video-title {
         font-size: 13px;
@@ -36,14 +32,10 @@
         margin-bottom: 13px;
       }
       .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
+        background-color: rgba(0, 0, 255, 0.452);
       }
       .video-info {
-        display: inline-block;
-        width: 200px;
-        vertical-align: top;
+        background-color: rgba(128, 128, 128, 0.397);
       }
       .video-author {
         font-weight: 600;
@@ -53,7 +45,7 @@
       }
       .profile-picture {
         width: 40px;
-        border-radius: 25px;
+        border-radius: 20px;
       }
       .video-stats {
         color: rgb(96, 96, 96);
@@ -62,41 +54,96 @@
       .thumbnail {
         margin-bottom: 7px;
       }
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 20px;
+      }
       
+
       
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="what to find?">
-    
-    <div class="video-preview">
-      <div class="thumbnail">
-        <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
+    <div class="main-grid">
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-1.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-1.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">There are 3 types of elements. <strong>1-block element</strong> (takes whole line)
+           
+          </p>
+          <p class="video-author">SuperSimpleDev</p>
+          <p class="video-stats">381K &#183; subscribers</p></div>
+        </div>
       </div>
-      <div>
-        <div class="channel-picture"><img class="profile-picture" src="pictures/channel-1.jpeg" alt="channel dude 1"></div>
-        <div class="video-info"><p class="video-title">There are 3 types of elements. <strong>1-block element</strong> (takes whole line)
-          <strong>2-Inline-block</strong> element takes as much as it needs
-          <strong>3-Inline element</strong> (text within text)
-          DIV is a block element, takes whole line. (From division) May be changed to inline-block. 
-          DIVs take 100% of space. If we have specification for a width on more specific level, they will take precedence.
-          Images by default overflow to keep its shape. we have to resize it manually.   
-        </p>
-        <p class="video-author">SuperSimpleDev</p>
-        <p class="video-stats">381K &#183; subscribers</p></div>
+  
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-2.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-2.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">Some text for channel two.
+          </p>
+          <p class="video-author">Silly Billy</p>
+          <p class="video-stats">31K &#183; subscribers</p></div>
+        </div>
       </div>
-    </div>
-
-    <div class="video-preview">
-      <div class="thumbnail">
-        <img class="picture1" src="pictures/thumbnail-2.webp" alt="2 dudes">
+  
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-3.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-3.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">Some text for channel two.
+          </p>
+          <p class="video-author">Stupid Bitch</p>
+          <p class="video-stats">31K &#183; subscribers</p></div>
+        </div>
       </div>
-      <div>
-        <div class="channel-picture"><img class="profile-picture" src="pictures/channel-2.jpeg" alt="channel dude 1"></div>
-        <div class="video-info"><p class="video-title">Some text for channel two.
-        </p>
-        <p class="video-author">Silly Billy</p>
-        <p class="video-stats">31K &#183; subscribers</p></div>
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-4.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-4.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">Some text for channel two.
+          </p>
+          <p class="video-author">Good channel</p>
+          <p class="video-stats">31K &#183; subscribers</p></div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-5.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-5.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">Some text for channel two.
+          </p>
+          <p class="video-author">It's good one</p>
+          <p class="video-stats">31K &#183; subscribers</p></div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div class="thumbnail">
+          <img class="picture1" src="pictures/thumbnail-6.webp" alt="2 dudes">
+        </div>
+        <div class="block-under-picture">
+          <div class="channel-picture"><img class="profile-picture" src="pictures/channel-6.jpeg" alt="channel dude 1"></div>
+          <div class="video-info"><p class="video-title">Some text for channel two.
+          </p>
+          <p class="video-author">GoKillYourself</p>
+          <p class="video-stats">31K &#183; subscribers</p></div>
+        </div>
       </div>
     </div>
   </body>
