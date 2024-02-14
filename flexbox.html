@@ -3,9 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We lear FlexBox</title>
+  <title>We learn FlexBox</title>
 </head>
-<body>
+<body style="padding-bottom: 500px;">
+  <div style="
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color: lightblue;">
+      Div 1 some more text</div>
+    <div style="background-color: coral;"> 
+      Div 2 <p>new paragraph</p></div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color: lightblue;
+      width: 100px;">
+      100 px
+    </div>
+    <div style="background-color: coral;
+      flex: 1;">
+      flex 1 (takes all the space)
+      </div>
+  </div>
+
+  <p style="margin: 5px;">
+    Order Matters in FlexBox. Whereas in grid, order does not matter.
+  </p>
+
+  <div style="
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color: lightblue;
+      width: 100px;">
+      100 px
+    </div>
+    <div style="background-color: coral;
+      flex: 1;">
+      flex 1 (takes 1/3)
+    </div>
+    <div style="background-color: lightgreen;
+      flex: 2;">
+      flex 2 (takes 2/3)
+    </div>
+  </div>
+
+  <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;">
+    <div style="background-color: lightblue;
+      width: 100px;">
+      100 px
+    </div>
+    <div style="background-color: coral;
+      width: 100px;">
+      100px
+    </div>
+    <div style="background-color: lightgreen;
+      width: 100px;">
+      100px
+    </div>
+  </div>
+
+  <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;">
+    <div style="background-color: lightblue;
+      width: 100px;">
+      100 px
+    </div>
+    <div style="background-color: coral;
+      width: 100px;">
+      100px
+    </div>
+    <div style="background-color: lightgreen;
+      width: 100px;">
+      100px
+    </div>
+  </div>
+
+  <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ">
+    <div style="background-color: lightblue;
+      width: 100px;">
+      100 px
+    </div>
+    <div style="background-color: coral;
+      width: 100px;">
+      100px
+    </div>
+    <div style="background-color: lightgreen;
+      width: 100px;">
+      100px
+    </div>
+  </div>
+  
   
 </body>
 </html>
