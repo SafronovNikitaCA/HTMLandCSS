@@ -8,19 +8,22 @@
 
 <body style="
 padding-bottom: 700px;
-padding-top: 42px;
+padding-top: 92px;
 padding-left: 62px;">
 
   <div style="
     background-color: black;
     color: white;
     position: fixed;
-    height: 50px;
+    height: 100px;
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 1;
     ">
-    Header position: fixed (out of main paige and hovers over the page covering other elements)
+    Header position: fixed (out of main paige and hovers over the page covering other elements). Sticked to the window and stays there, does not move with page itself.
+    Whereas, absolute places an element on the page. When page moves, the element is sticked to the page 
+    and will go up or down with it. absolute may be <strong>used inside fixed\relative</strong> element only and its position will be set relatively to this fixed element (inside it)
   </div>
 
   <div style="
@@ -29,10 +32,32 @@ padding-left: 62px;">
   position: fixed;
   left: 0px;
   bottom: 0px;
-  top: 50px;
+  top: 100px;
   width: 70px;
   ">
     sidebar
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    font-size: 20px;
+    ">
+    X
+  </div>
+  </div>
+
+  <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    right: 10px;
+    top: 60px;
+    z-index: 1;
+    ">
+    absolute-1
   </div>
 
   <div style="background-color: lightblue;
@@ -43,8 +68,24 @@ padding-left: 62px;">
 
   <div style="background-color: coral;
     height: 100px;
-    width: 200px;">
+    width: 200px;
+    position: relative;
+    ">
     div 2
+      <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 10px;
+        bottom: 10px;
+        font-size: 13px;
+        background-color: black;
+        border-radius: 2px;
+        ">
+        15:23
+    </div>
   </div>
+
+
 </body>
 </html>
