@@ -11,12 +11,7 @@
   line-height: 15px;
   margin-bottom: 13px;
 }
-.channel-picture {
-  background-color: rgba(0, 0, 255, 0.452);
-}
-.video-info {
-  background-color: rgba(128, 128, 128, 0.397);
-}
+
 .video-author {
   font-weight: 600;
   font-size: 14px;
@@ -24,8 +19,8 @@
   margin-bottom: 4px;
 }
 .profile-picture {
-  width: 40px;
-  border-radius: 20px;
+  width: 36px;
+  border-radius: 18px;
 }
 .video-stats {
   color: rgb(96, 96, 96);
